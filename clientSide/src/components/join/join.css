@@ -1,0 +1,15 @@
+.wrapper {
+  height: fit-content;
+  width: 25vw;
+  margin: auto;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  gap: 12px;
+}
