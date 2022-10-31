@@ -21,8 +21,10 @@ const Chat = () => {
         socket.emit("join", { name, room }, (err) => {
             console.log("🚀 ~ file: Chat.js ~ line 21 ~ socket.emit ~ room", room)
         });
-
-    }, [baseURL, document.location.search]);
+        return () => {
+            socket.disconnect();
+        }
+    }, [document.location.search]);
 
 
     return (
